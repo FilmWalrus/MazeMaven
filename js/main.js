@@ -52,7 +52,7 @@ function MazeGeneration() {
 
             //square.style = "width: 15px; height: 15px;"
             //square.value = col;
-            //square.addEventListener("click", function () { ClickAction(this) });
+            square.addEventListener("click", function () { ClickAction(this) });
 
             // id = maze_0_0
             square.id = "maze_" + row + "_" + col;
@@ -83,5 +83,9 @@ function CreateTunnel() {
     var randomSquare = GetTileHTML(randomRow, randomCol);
 
     randomSquare.className = "maze-square maze-red";
+}
+
+function ClickAction(square) {
+    square.className = "maze-square maze-red";
 }
 
