@@ -18,14 +18,16 @@
     max-width: 15px;
 }
 
-.maze-black {
-    background-color: #000000;
+.maze-wall {
+    /*background-color: #000000;*/
+    background-color: #808080;
 }
 
-.maze-white {
+.maze-open {
     background-color: #ffffff;
 }
 
-.maze-red {
-    background-color: #ff0000;
+.maze-path {
+    /*background-color: #ff0000;*/
+    background-color: #ffffff;
 }
